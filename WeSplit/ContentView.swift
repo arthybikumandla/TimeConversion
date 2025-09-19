@@ -57,6 +57,7 @@ struct ContentView: View {
                 }
                 Section("Output"){
                     Text(output.formatted(.number.precision(.fractionLength(2))))
+                        .foregroundStyle(value == 0 ? .red : .black)
                 }
             }
             .navigationTitle("Time Conversion")
